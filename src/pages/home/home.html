@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button id="myButton" ion-button block (click)="setMessage()">Set message</button>
+  <p id="message">{{message}}</p>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Input</ion-label>
+      <ion-input id="myInputField" [(ngModel)]="inputtext"></ion-input>
+    </ion-item>
+  </ion-list>
+  <p id="input">{{inputtext}}</p>
+  <button id="openActionSheet" ion-button block (click)="openActionSheet()">Open Action Sheet</button>
+  <p id="selectedAction">{{selectedAction}}</p>
+  <button id="lockButton" ion-button block (click)="lockScreenToPortrait()">Lock Screen to Portrait</button>
+  <button id="cameraButton" ion-button block (click)="takePicture()">Take picture</button>
+  <img id="myImage" [src]="image">
+</ion-content>

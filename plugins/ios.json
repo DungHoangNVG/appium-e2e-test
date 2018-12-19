@@ -1,0 +1,39 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-actionsheet": {
+      "PACKAGE_NAME": "appium.e2e.test"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "appium.e2e.test"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "appium.e2e.test"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "appium.e2e.test"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "appium.e2e.test"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "appium.e2e.test"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "appium.e2e.test"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "appium.e2e.test"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "appium.e2e.test"
+    }
+  },
+  "dependent_plugins": {}
+}
