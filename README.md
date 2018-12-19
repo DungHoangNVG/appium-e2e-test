@@ -1,1 +1,1 @@
-# appium.e2e.test
+# appium-e2e-test
