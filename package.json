@@ -9,12 +9,13 @@
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "build-ios": "ionic cordova build ios -- --buildFlag='-UseModernBuildSystem=0'",
-    "emulate-ios": "ionic cordova emulate ios -- --buildFlag='-UseModernBuildSystem=0'",
-    "run-ios": "ionic cordova run ios --device -- --buildFlag='-UseModernBuildSystem=0'",
+    "build-simulator": "ionic cordova emulate ios -- --buildFlag='-UseModernBuildSystem=0'",
+    "build-device": "ionic cordova run ios --device -- --buildFlag='-UseModernBuildSystem=0'",
     "lint": "ionic-app-scripts lint",
     "appium": "appium",
     "appium-doctor": "appium-doctor",
-    "test": "wdio e2e-tests/wdio.conf.js"
+    "test-device": "wdio e2e-tests/wdio.device.conf.js",
+    "test-simulator": "wdio e2e-tests/wdio.simulator.conf.js"
   },
   "dependencies": {
     "@angular/animations": "5.2.11",

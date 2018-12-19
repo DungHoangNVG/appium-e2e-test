@@ -24,20 +24,6 @@ exports.config = {
     wdaStartupRetries: 4
   }],
 
-  /*
-  //Use these capabilities to run the tests on a iPhone X simulator; be aware: the tests involving the camera won't work!
-  //execute the following command to build the app for the testing on a device: $ npm run emulate-ios
-  capabilities: [{
-    platformName: 'iOS',
-    platformVersion: '12.1',
-    deviceName: 'iPhone X',
-    app: './platforms/ios/build/emulator/appium-test.app',
-    autoWebview: true,
-    autoGrantPermissions: true,
-    automationName: 'XCUITest'
-  }],
-  */
-
   // Where the files we are testing can be found.
   specs: ['./e2e-tests/spec/**/*.js'],
 
