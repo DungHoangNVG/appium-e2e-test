@@ -8,7 +8,6 @@ exports.config = {
 
 
     //Use these capabilities to run the tests on a iPhone X simulator; be aware: the tests involving the camera won't work!
-    //execute the following command to build the app for the testing on a device: $ npm run emulate-ios
     capabilities: [{
         platformName: 'iOS',
         platformVersion: '12.1',

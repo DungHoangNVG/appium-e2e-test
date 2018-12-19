@@ -6,15 +6,13 @@ exports.config = {
   // 'silent', 'verbose', 'command', 'data', 'result', 'error'
   logLevel: 'error',
 
-  //Use these capabilities to run the tests on Ueli's iPhone X; change the udid if you want to use another device
-  //and adapt the app path (an absolute path seems to be required for testing on physical devices)
-  //execute the following command to build the app for the testing on a device: $ npm run run-ios
+  //Set the udid of your test device and adapt the app path (an absolute path seems to be required for testing on physical devices)
   capabilities: [{
     platformName: 'iOS',
     platformVersion: '12.1',
-    udid: '00008020-001914E93A08003A',
+    udid: '<device identifier>',
     deviceName: 'iPhone X',
-    app: '/Users/u110730/workspaces/appium-test/platforms/ios/build/device/appium-test.app',
+    app: '<absolute path prefix>/platforms/ios/build/device/appium-test.app',
     autoWebview: true,
     autoGrantPermissions: true,
     automationName: 'XCUITest',
