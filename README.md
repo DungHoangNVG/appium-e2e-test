@@ -17,3 +17,7 @@
 ```$ npm run build-device```  (only once after app changes)
 
 ```$ npm run test-device```
+
+**REMARKS:**
+
+- ignore the 'onPrepare' hook failure
