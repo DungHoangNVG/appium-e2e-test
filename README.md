@@ -49,7 +49,14 @@ Create a properties file in project root with local configuration (not under ver
 
 Name of file: ```e2e-test.properties```
 
-Example content for testing on simulator:
+Content of property file is different for testing on simulators and devices, see below.
+
+
+**For testing in simulator:**
+
+```$ npm run build-simulator``` (only once after app changes)
+
+Example content of file: ```e2e-test.properties```
 
 ```
 simulator=true
@@ -58,22 +65,7 @@ deviceName=iPhone X
 app=./platforms/ios/build/emulator/appium-test.app
 ```
 
-Example content for testing on device:
-
-```
-platformVersion=12.1
-deviceName=iPhone X
-udid=<device id>
-app=<absolute path to project>/platforms/ios/build/device/appium-test.app
-xcodeOrgId=SXX6R46D69
-xcodeSigningId=iPhone Developer
-```
-
-**For testing in simulator:**
-
-```$ npm run build-simulator``` (only once after app changes)
-
-```$ npm run test-simulator```
+```$ npm run test```
 
 **For testing on physical device:**
 
@@ -81,4 +73,19 @@ xcodeSigningId=iPhone Developer
 
 ```$ npm run build-device```  (only once after app changes)
 
-```$ npm run test-device```
+Example content of file: ```e2e-test.properties```
+
+```
+simulator=false
+platformVersion=12.1
+deviceName=iPhone X
+app=<absolute path to project>/platforms/ios/build/device/appium-test.app
+udid=<device identifier>
+xcodeOrgId=SXX6R46D69
+xcodeSigningId=iPhone Developer
+startIWDP=true
+wdaStartupRetries=4
+```
+
+
+```$ npm run test```

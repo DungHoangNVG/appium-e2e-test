@@ -9,16 +9,20 @@ exports.config = {
     // 'silent', 'verbose', 'command', 'data', 'result', 'error'
     logLevel: 'error',
 
-
-    //Use these capabilities to run the tests on a iPhone X simulator; be aware: the tests involving the camera won't work!
+    //Set the udid of your test device and adapt the app path (an absolute path seems to be required for testing on physical devices)
     capabilities: [{
         platformName: 'iOS',
         platformVersion: properties.get('platformVersion'),
+        udid: properties.get('udid'),
         deviceName: properties.get('deviceName'),
-        app:  properties.get('app'),
+        app: properties.get('app'),
         autoWebview: true,
         autoGrantPermissions: true,
         automationName: 'XCUITest',
+        xcodeOrgId: properties.get('xcodeOrgId'),
+        xcodeSigningId: properties.get('xcodeSigningId'),
+        startIWDP: properties.get('startIWDP'),
+        wdaStartupRetries: properties.get('wdaStartupRetries'),
         simulator: properties.get('simulator')
     }],
 
