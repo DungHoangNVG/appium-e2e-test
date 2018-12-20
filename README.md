@@ -43,6 +43,32 @@ Install Appium Desktop: https://github.com/appium/appium-desktop
 
 ```$ npm install```
 
+**Local config**
+
+Create a properties file in project root with local configuration (not under version control):
+
+Name of file: ```e2e-test.properties``
+
+Example content for testing on simulator:
+
+```
+simulator=true
+platformVersion=12.1
+deviceName=iPhone X
+app=./platforms/ios/build/emulator/appium-test.app
+```
+
+Example content for testing on device:
+
+```
+platformVersion=12.1
+deviceName=iPhone X
+udid=<device id>
+app=<absolute path to project>/platforms/ios/build/device/appium-test.app
+xcodeOrgId=SXX6R46D69
+xcodeSigningId=iPhone Developer
+```
+
 **For testing in simulator:**
 
 ```$ npm run build-simulator``` (only once after app changes)

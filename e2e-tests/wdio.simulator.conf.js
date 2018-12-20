@@ -1,3 +1,6 @@
+var PropertiesReader = require('properties-reader');
+var properties = PropertiesReader('./e2e-test.properties');
+
 exports.config = {
     // 4723 is the default port for Appium
     port: 4723,
@@ -10,13 +13,13 @@ exports.config = {
     //Use these capabilities to run the tests on a iPhone X simulator; be aware: the tests involving the camera won't work!
     capabilities: [{
         platformName: 'iOS',
-        platformVersion: '12.1',
-        deviceName: 'iPhone X',
-        app: './platforms/ios/build/emulator/appium-test.app',
+        platformVersion: properties.get('platformVersion'),
+        deviceName: properties.get('deviceName'),
+        app:  properties.get('app'),
         autoWebview: true,
         autoGrantPermissions: true,
         automationName: 'XCUITest',
-        simulator:true
+        simulator: properties.get('simulator')
     }],
 
     // Where the files we are testing can be found.

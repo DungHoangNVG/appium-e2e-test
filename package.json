@@ -59,6 +59,7 @@
     "@types/webdriverio": "^4.13.0",
     "appium": "^1.10.0",
     "appium-doctor": "^1.6.0",
+    "properties-reader": "0.0.16",
     "typescript": "~2.6.2",
     "wdio-jasmine-framework": "^0.3.8",
     "wdio-spec-reporter": "^0.1.5",

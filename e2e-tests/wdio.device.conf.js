@@ -1,3 +1,6 @@
+var PropertiesReader = require('properties-reader');
+var properties = PropertiesReader('./e2e-test.properties');
+
 exports.config = {
   // 4723 is the default port for Appium
   port: 4723,
@@ -9,15 +12,15 @@ exports.config = {
   //Set the udid of your test device and adapt the app path (an absolute path seems to be required for testing on physical devices)
   capabilities: [{
     platformName: 'iOS',
-    platformVersion: '12.1',
-    udid: '00008020-001914E93A08003A',
-    deviceName: 'iPhone X',
-    app: '/Users/u110730/workspaces/appium-test/platforms/ios/build/device/appium-test.app',
+    platformVersion: properties.get('platformVersion'),
+    udid: properties.get('udid'),
+    deviceName: properties.get('deviceName'),
+    app: properties.get('app'),
     autoWebview: true,
     autoGrantPermissions: true,
     automationName: 'XCUITest',
-    xcodeOrgId: "SXX6R46D69",
-    xcodeSigningId: "iPhone Developer",
+    xcodeOrgId: properties.get('xcodeOrgId'),
+    xcodeSigningId:properties.get('xcodeSigningId'),
     startIWDP: true,
     wdaStartupRetries: 4
   }],
