@@ -81,6 +81,13 @@ describe('Home', function () {
         browser.click('#cameraButton');
         browser.context('NATIVE_APP');
         browser.pause(2000);
+        try {
+            browser.alertDismiss();
+            browser.pause(2000);
+        }
+        catch (e) {
+            //console.log('***************alertDismiss() error: '+JSON.stringify(e));
+        }
         //todo: replace tap coordinates according to defined device (e.g. use capabilities)
         //switch camera
         browser.touchPerform([{

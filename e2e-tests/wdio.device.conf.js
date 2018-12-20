@@ -10,9 +10,9 @@ exports.config = {
   capabilities: [{
     platformName: 'iOS',
     platformVersion: '12.1',
-    udid: '<device identifier>',
+    udid: '00008020-001914E93A08003A',
     deviceName: 'iPhone X',
-    app: '<absolute path prefix>/platforms/ios/build/device/appium-test.app',
+    app: '/Users/u110730/workspaces/appium-test/platforms/ios/build/device/appium-test.app',
     autoWebview: true,
     autoGrantPermissions: true,
     automationName: 'XCUITest',
