@@ -14,8 +14,8 @@
     "lint": "ionic-app-scripts lint",
     "appium": "appium",
     "appium-doctor": "appium-doctor",
-    "test-device": "wdio --screenshotPath='./e2e-tests/screenshots' e2e-tests/wdio.device.conf.js",
-    "test-simulator": "wdio --screenshotPath='./e2e-tests/screenshots' e2e-tests/wdio.simulator.conf.js"
+    "test-device": "wdio --screenshotPath='./e2e-tests/screenshots/device' e2e-tests/wdio.device.conf.js",
+    "test-simulator": "wdio --screenshotPath='./e2e-tests/screenshots/simulator' e2e-tests/wdio.simulator.conf.js"
   },
   "dependencies": {
     "@angular/animations": "5.2.11",
