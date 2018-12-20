@@ -1,4 +1,4 @@
 /node_modules
 appium.log
-e2e-test.properties
+e2e-test*.properties
 screenshots/
