@@ -15,7 +15,8 @@ exports.config = {
         app: './platforms/ios/build/emulator/appium-test.app',
         autoWebview: true,
         autoGrantPermissions: true,
-        automationName: 'XCUITest'
+        automationName: 'XCUITest',
+        simulator:true
     }],
 
     // Where the files we are testing can be found.

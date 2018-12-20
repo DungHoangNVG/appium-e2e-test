@@ -1,4 +1,5 @@
 describe('Home', function () {
+    var simulator;
     beforeEach(function () {
         //use web context as default
         browser.context(browser.contexts().value[1]);
@@ -12,7 +13,8 @@ describe('Home', function () {
         //browser.reload();
     });
     beforeAll(function () {
-        console.log('capabilities: ' + JSON.stringify(browser.desiredCapabilities));
+        //console.log('capabilities: ' + JSON.stringify(browser.desiredCapabilities));
+        simulator = browser.desiredCapabilities['simulator'];
     });
     it('should display message', function () {
         browser.click('#myButton');
@@ -77,6 +79,11 @@ describe('Home', function () {
         expect(selectedAction).toBe('Button pressed: ' + 3);
     });
     it('should take picture', function () {
+        if (simulator) {
+            console.warn('Skipping test. Access to camera is not available on simulator.');
+            pending('Skipping test. Access to camera is not available on simulator.');
+            return;
+        }
         var imageSrcAtBegin = browser.getAttribute('#myImage', 'src');
         browser.click('#cameraButton');
         browser.context('NATIVE_APP');

@@ -1,5 +1,7 @@
 describe('Home', () => {
 
+    let simulator: boolean;
+
     beforeEach(() => {
         //use web context as default
         browser.context(browser.contexts().value[1]);
@@ -16,7 +18,8 @@ describe('Home', () => {
 
     beforeAll(
         () => {
-            console.log('capabilities: ' + JSON.stringify(browser.desiredCapabilities));
+            //console.log('capabilities: ' + JSON.stringify(browser.desiredCapabilities));
+            simulator = browser.desiredCapabilities['simulator'];
         });
 
     it('should display message', () => {
@@ -91,6 +94,13 @@ describe('Home', () => {
     });
 
     it('should take picture', () => {
+
+        if (simulator) {
+            console.warn('Skipping test. Access to camera is not available on simulator.');
+            pending('Skipping test. Access to camera is not available on simulator.');
+            return;
+        }
+
         let imageSrcAtBegin = browser.getAttribute('#myImage', 'src');
 
         browser.click('#cameraButton');
