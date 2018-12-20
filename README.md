@@ -47,7 +47,7 @@ Install Appium Desktop: https://github.com/appium/appium-desktop
 
 Create a properties file in project root with local configuration (not under version control):
 
-Name of file: ```e2e-test.properties``
+Name of file: ```e2e-test.properties```
 
 Example content for testing on simulator:
 
