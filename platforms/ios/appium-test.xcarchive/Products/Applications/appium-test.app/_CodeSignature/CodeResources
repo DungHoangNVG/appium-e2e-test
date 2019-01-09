@@ -98,11 +98,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Z0kxaGWnQB1z4e+du0kJCtUtNIY=
+		crrhABCqjLrPPMS+FMDqqBrYUno=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		WVKXforMmkEf9hjj/qT16l5eaBY=
+		VlGqHQrmARFWFHfKf/b/jp+s540=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		+E4KldigQn6YJeZ0qq8Nes9Kerg=
+		N3OmPOyDMB8s08NKf7BLv9qPghM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HaubStpskmRqjmvgNEU+lV6kglA=
+		d0/CWCCWGFtWHPizcxMU2UVKMMw=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		s+4lnru0s0jO3yQSMT6Mtaguwzg=
+		t7Si2lapOibmYdhX9BMsAMKPWm8=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -680,22 +680,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z0kxaGWnQB1z4e+du0kJCtUtNIY=
+			crrhABCqjLrPPMS+FMDqqBrYUno=
 			</data>
 			<key>hash2</key>
 			<data>
-			jjSCJgOsF2K3fqwyZ+mDxsVKF6LxUvVcgVRjzoO9bRI=
+			4MCX1mRaWbGxqPGtht1yg5qlO8lV227oCeZGg965/YU=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WVKXforMmkEf9hjj/qT16l5eaBY=
+			VlGqHQrmARFWFHfKf/b/jp+s540=
 			</data>
 			<key>hash2</key>
 			<data>
-			wHprkSMVAZ2fNVbj8BpD6AvQhPn1U20U31Faoadp67U=
+			/ooKxNWvf1OV93C7O4vr8XXnveQtxR1OyYU7M3OGVMM=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -713,11 +713,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+E4KldigQn6YJeZ0qq8Nes9Kerg=
+			N3OmPOyDMB8s08NKf7BLv9qPghM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ksfYSNz+b0lKML9P7HqC3g6qe4rE9wmxLEt0+keLFmI=
+			0yWVzJfxdQk/BXbdnzMEc5ElTZZaTv/i7gxIiZmO96M=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -900,11 +900,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s+4lnru0s0jO3yQSMT6Mtaguwzg=
+			t7Si2lapOibmYdhX9BMsAMKPWm8=
 			</data>
 			<key>hash2</key>
 			<data>
-			PmbWGWwCuqzmiNVj6UZPH+5MRuNpJ+hL8OftBEoaVSI=
+			vZxuBVeTjPMt44MQ2jtepKvP6MFWYU/O5m+00Qmvy9s=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -1548,7 +1548,7 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -1579,24 +1579,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -1632,13 +1620,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>
