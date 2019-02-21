@@ -9,6 +9,8 @@ exports.config = {
     // 'silent', 'verbose', 'command', 'data', 'result', 'error'
     logLevel: 'error',
 
+    maxInstances: 1,
+
     //Set the udid of your test device and adapt the app path (an absolute path seems to be required for testing on physical devices)
     capabilities: [{
         platformName: 'iOS',
